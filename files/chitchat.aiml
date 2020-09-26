@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>GREET</pattern>
+<template>Hi, I can tell you my favorite foods.</template>
+</category>
+
+<category><pattern>GOODBYE</pattern>
+<template>
+<random>
+<li>See you.</li>
+<li>See you around.</li>
+<li>Bye. Have a good one.</li>
+<li>Goodbye.</li>
+</random>
+</template>
+</category>
+
+</aiml>

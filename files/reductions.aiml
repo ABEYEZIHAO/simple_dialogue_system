@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category><pattern>HI ^</pattern>
+<template><srai>GREET</srai></template>
+</category>
+<category><pattern>HELLO ^</pattern>
+<template><srai>GREET</srai></template>
+</category>
+<category><pattern>HOW ARE YOU ^</pattern>
+<template><srai>GREET</srai></template>
+</category>
+<category><pattern>HOW R U ^</pattern>
+<template><srai>GREET</srai></template>
+</category>
+<category><pattern>GOOD MORNING</pattern>
+<template><srai>GREET</srai></template>
+</category>
+
+<category><pattern>SEE YOU ^</pattern>
+<template><srai>GOODBYE</srai></template>
+</category>
+<category><pattern>^ GOODBYE ^</pattern>
+<template><srai>GOODBYE</srai></template>
+</category>
+<category><pattern>HAVE A GOOD *</pattern>
+<template><srai>GOODBYE</srai></template>
+</category>
+
+<category><pattern>RECIPE</pattern>
+<template><srai>SHOW RECIPE</srai></template>
+</category>
+<category><pattern>^ SHOW ME THE RECIPE</pattern>
+<template><srai>SHOW RECIPE</srai></template>
+</category>
+<category><pattern>^ SHOW ME THE RECIPE OF <set>foods</set> ^</pattern>
+<template><srai>SHOW RECIPE OF <star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT IS THE RECIPE</pattern>
+<template><srai>SHOW RECIPE</srai></template>
+</category>
+<category><pattern>WHAT IS THE RECIPE OF <set>foods</set></pattern>
+<template><srai>SHOW RECIPE OF <star/></srai></template>
+</category>
+<category><pattern>^ WHY DO YOU LIKE IT</pattern>
+<template><srai>WHY YOU LIKE</srai></template>
+</category>
+<category><pattern>^ WHY DO YOU LIKE <set>foods</set></pattern>
+<template><srai>WHY YOU LIKE <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ szechuan peppercorn ^</pattern>
+<template><srai><star/> szechuan peppercorn powder <star index="2"/></srai></template>
+</category>
+<category><pattern>^ peppercorn powder^</pattern>
+<template><srai><star/> szechuan peppercorn powder <star index="2"/></srai></template>
+</category>
+<category><pattern>^ SZECHUAN *</pattern>
+<template><star/> sichuan <star index="2"/></template>
+</category>
+<category><pattern>^ CORNSTARCH ^</pattern>
+<template><star/> corn starch <star index="2"/></template>
+</category>
+<category><pattern>^ PARMESAN ^</pattern>
+<template><star/> Parmigiano-Reggiano <star index="2"/></template>
+</category>
+</aiml>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+<category><pattern>*</pattern>
+<template>
+<random>
+<li>I have no answer for that. I can tell you my favorite food.</li>
+<li>I don't understand. I can tell you my favorite food.</li>
+</random>
+<srai>SHOW FOOD LIST</srai></template>
+</category>
+
+</aiml>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>SHOW FOOD LIST</pattern>
+<template><button><text>Spaghetti alla Carbonara</text><postback></postback></button>
+<button><text>Cauliflower Gratin</text><postback></postback></button>
+<button><text>Pan Seared Ribeye</text><postback></postback></button>
+<button><text>Mapo Tofu</text><postback></postback></button>
+<button><text>Peking Shredded Pork</text><postback></postback></button></template>
+</category>
+
+<category><pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
+<template>Here are my top five favorite foods.<srai>SHOW FOOD LIST</srai></template>
+</category>
+    
+<category><pattern><set>foods</set></pattern>
+<template>To make <set name="cur_food"><star/></set>, we need to prepare these ingredients:<br/><br/> <map name="food2ingredient"><star/></map></template>
+</category>
+<category><pattern>SHOW INGREDIENTS</pattern>
+<template>To make <get name="cur_food"/>, we need to prepare these ingredients:<br/><br/> <map name="food2ingredient"><get name="cur_food"/></map></template>
+</category>
+<category><pattern>SHOW INGREDIENTS OF <set>foods</set></pattern>
+<template>To make <set name="cur_food"><star/></set>, we need to prepare these ingredients:<br/><br/> <map name="food2ingredient"><star/></map></template>
+</category>
+<category><pattern>SHOW RECIPE</pattern>
+<template>Here is the recipe of <get name="cur_food"/>:<br/><br/> <map name="food2recipe"><get name="cur_food"/></map></template>
+</category>
+<category><pattern>SHOW RECIPE OF <set>foods</set></pattern>
+<template>Here is the recipe of <set name="cur_food"><star/></set>:<br/><br/> <map name="food2recipe"><star/></map></template>
+</category>
+<category><pattern>WHY YOU LIKE</pattern>
+<template><srai><map name="food2reason"><get name="cur_food"/></map></srai></template>
+</category>
+<category><pattern>WHY YOU LIKE <set>foods</set></pattern>
+<template><map name="food2reason"><set name="cur_food"><star/></set></map></template>
+</category>
+
+</aiml>
